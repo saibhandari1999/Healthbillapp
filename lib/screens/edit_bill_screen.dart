@@ -105,9 +105,8 @@ class _EditBillScreenState extends State<EditBillScreen> {
                   dateOfService: dateOfService,
                   billAmount: billAmount,
                 );
-
                 // Provider.of<BillsData>(context, listen: false).addBill(editedBill);
-                Navigator.pop(
+                Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context) => SummaryScreen(
